@@ -17,7 +17,7 @@
 
 ### Тестирование
 
-![](screenshots/1st task.png)
+![1](screenshots/1st task.png)
 
 
 
@@ -35,7 +35,7 @@
 
 ### Тестирование
 
-![](screenshots/2nd task.png)
+![2](screenshots/2nd task.png)
 
 
 
@@ -54,4 +54,4 @@
 
 ### Тестирование
 
-![](screenshots/3rd task.png)
+![3](screenshots/3rd task.png)
