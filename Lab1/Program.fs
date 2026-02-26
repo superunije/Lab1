@@ -19,14 +19,15 @@ let result =
 printfn "Список значений -1: %A" result
 
 // 2 Задание
-let rec countStrings n=
+let rec countStrings n =
+    printf "Введите строку: "
     let stroka = Console.ReadLine()
     if stroka = "" then printfn "Было введено количество строк: %i" n
     else countStrings(n + 1)
 
 //[<EntryPoint>]
 //let main argv =
-//    //countStrings 0
+//    countStrings 0
     
 //    0
 
