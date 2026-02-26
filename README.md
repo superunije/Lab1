@@ -17,7 +17,7 @@
 
 ### Тестирование
 
-![1](https://github.com/superunije/Lab1/tree/master/screenshots/1st task.png)
+![1](screenshots/1st_task.png)
 
 
 
