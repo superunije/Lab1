@@ -42,7 +42,15 @@ let rec delElem element list =
     else
         list.Head :: delElem element list.Tail
 
-let findElem element list = List.contains element list
+let rec findElem element list =
+    match list with
+    | [] ->
+        printfn "Элемент не найден"
+    | head :: tail ->
+        if head = element then
+            printfn "Элемент \"%s\" найден" element
+        else
+            findElem element tail
 
 let combLists list1 list2 = list1 @ list2
 
@@ -78,11 +86,7 @@ let main argv =
 
     printf "Введите элемент для поиска: "
     let find = Console.ReadLine()
-    let exists = findElem find listRemove
-    if exists then
-        printfn "Элемент \"%s\" найден" find
-    else
-        printfn "Элемент не найден"
+    findElem find listRemove
 
     printfn "Введите второй список для сцепки:"
     let list2 = createList()
