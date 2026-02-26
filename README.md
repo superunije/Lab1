@@ -17,7 +17,7 @@
 
 ### Тестирование
 
-![1](screenshots/1st task.png)
+![1](https://github.com/superunije/Lab1/tree/master/screenshots)
 
 
 
@@ -35,7 +35,7 @@
 
 ### Тестирование
 
-![2](screenshots/2nd task.png)
+![2](https://github.com/superunije/Lab1/tree/master/screenshots)
 
 
 
@@ -54,4 +54,4 @@
 
 ### Тестирование
 
-![3](screenshots/3rd task.png)
+![3](https://github.com/superunije/Lab1/tree/master/screenshots)
