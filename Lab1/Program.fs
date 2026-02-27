@@ -3,33 +3,26 @@
 // 14 вариант
 
 // 1 Задание
-printfn "Введите значения в список (в строку через пробел)"
-let input = Console.ReadLine()
-
 // Преобразование строки в массив чисел в список
-let numbers =
+let numbers (input : string) =
     input.Split(' ')
     |> Array.map int
     |> List.ofArray
 
 // Список со значениями -1
-let result =
+let result numbers =
     numbers |> List.map (fun x -> x - 1)
 
-printfn "Список значений -1: %A" result
 
 // 2 Задание
-let rec countStrings n =
+let rec countStrings countS =
     printf "Введите строку: "
-    let stroka = Console.ReadLine()
-    if stroka = "" then printfn "Было введено количество строк: %i" n
-    else countStrings(n + 1)
+    let stringInput = Console.ReadLine()
+    if stringInput = "" then 
+        printfn "Было введено количество строк: %i" countS
+    else 
+        countStrings (countS + 1)
 
-//[<EntryPoint>]
-//let main argv =
-//    countStrings 0
-    
-//    0
 
 // 3 Задание
 let addElem element list = element :: list
@@ -70,6 +63,19 @@ let rec createList () =
 
 [<EntryPoint>]
 let main argv =
+    printfn "Введите значения в список (в строку через пробел)"
+    let input = Console.ReadLine()
+    match input with
+    | "" ->
+        printfn "Список не введён"
+    | _ ->
+        let list = numbers input |> result
+        printfn "Список значений -1: %A" list
+
+
+    countStrings 0
+
+
     printfn "Введите элементы списка:"
     let myList = createList()
     printfn "Изначальный список: %A" myList
